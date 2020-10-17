@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "first_app/base.html" %}
+
+
+{% block body_block %}
+    <h1>Welcome to OTHER  HTML</h1>
+    <a href="{% url 'first_app:relative' %}">THE relative PAGE</a>
+
+    <h1>{{ text|cut:'Pravin' }}</h1>
+    <h2>{{ age|add:"10" }}</h2>
+
+{% endblock %}
+
